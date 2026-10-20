@@ -1,0 +1,38 @@
+
+### 1. GET all posts
+GET https://jsonplaceholder.typicode.com/posts
+Accept: application/json
+
+###
+
+### 2. GET one post
+GET https://jsonplaceholder.typicode.com/posts/1
+Accept: application/json
+
+###
+
+### 3. POST - create a sample post
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+  "title": "Learning Postman",
+  "body": "This is my first API testing practice.",
+  "userId": 1
+}
+###
+
+### 4. PUT - update a post
+PUT https://jsonplaceholder.typicode.com/posts/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Updated Postman Practice",
+  "body": "I am learning API testing in VS Code.",
+  "userId": 1
+}
+
+###
+### 5. DELETE - delete a post
+DELETE https://jsonplaceholder.typicode.com/posts/1
